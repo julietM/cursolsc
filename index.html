@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el curso de L.S.C</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/image/senas.jpeg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Curso de las señas</h1>
+        <h4>Huila-pitatito</h4>
+    </header>
+    <div class="container">
+        
+
+        <p><h3>Curso</h3> 
+            <br>
+El curso de LSC (Lengua de Señas Colombiana) está dirigido a personas interesadas en aprender y practicar las señas.
+A través de este curso, podrás adquirir habilidades para comunicarte con personas sordas y aplicar lo aprendido en tu futuro personal o profesional.
+Si deseas aprender LSC, por favor envía el formulario y la solicitud.</p>
+
+
+<p> <h3>Perfil</h3>
+Se busca persona con experiencia en interpretación de LSC, con certificado de FENASCOL u otra entidad reconocida.
+El perfil debe contar con habilidades, calidad, nivel y trayectoria en la atención a personas sordas.
+Se necesita intérprete para atención en bancos, colegios, universidades u otras instituciones.
+Si estás disponible, eres independiente y estás interesado en trabajar con la comunidad sorda, por favor envía el formulario y la solicitud.</p>
+    </div>
+    <img  class="imagen" src="./image/lsc.png"  alt="" width="550">
+
+   
+    <div class="contact-container">
+        <form class="form1" action="https://formsubmit.co/julietyartes2@gmail.com" method="POST" onsubmit="return validarFormulario();">
+
+          <h1 class="tutito">Contacto</h1>
+          <br>
+
+            <input type="text"  name="Nombre" placeholder="Nombre" required>
+            
+             <input type="text" name="Apellido" placeholder="Apellido" required>
+             
+              <input type="number"  name="Cedula" placeholder="Cedula"  required>
+              
+            <input  type="email"  name="Correo" placeholder="Correo" required>
+            <br>
+
+  <div class="grup">
+    <input class="boton" type="radio" name="respuesta" value="Quiero aprender las señas" required>
+    <label>Quiero aprender las señas</label>
+  </div>
+
+  <div class="grup">
+    <input class="boton" type="radio" name="respuesta" value="Tengo el certificado" required>
+    <label>Tengo el certificado</label>
+  </div>
+            
+            <textarea name="message" placeholder="Escribes" cols="40" rows="10" required></textarea>       
+               <button type="submit" onclick="alert">ENVIAR</button>
+               
+               <input type="hidden" name="_next" value="http://127.0.0.1:57700/">
+               <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+    <footer>
+        Colombia-2025
+    </footer>
+
+    <script>
+      function  validarFormulario(){
+        Swal.fire({
+        title: "Correcto! solicitud",
+        icon: "solicitud",
+        draggable: true
+});
+      }
+    </script>
+ 
+</body>
+</html>
